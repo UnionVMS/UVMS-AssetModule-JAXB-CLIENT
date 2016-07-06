@@ -20,6 +20,8 @@
         <contract.files.outputDirectory>contracts</contract.files.outputDirectory>
         <contract.files.location>${project.build.directory}/${contract.files.outputDirectory}</contract.files.location>
         <wsdl.name>${contract.name}.wsdl</wsdl.name>
+        <project.scm.id>github</project.scm.id>
+        <maven-release-plugin>2.5.3</maven-release-plugin>
     </properties>
     
     <repositories>
@@ -47,7 +49,26 @@
         <connection>scm:git:https://github.com/UnionVMS/UVMS-AssetModule-JAXB-CLIENT.git</connection>
     </scm>
 
+
     <build>
+        <plugins>
+            <plugin>
+                <artifactId>maven-release-plugin</artifactId>
+                <version>${maven-release-plugin}</version>
+                <dependencies>
+                    <dependency>
+                        <groupId>org.apache.maven.scm</groupId>
+                        <artifactId>maven-scm-provider-gitexe</artifactId>
+                        <version>1.8.1</version>
+                    </dependency>
+                </dependencies>
+                <configuration>
+                    <checkModificationExcludes>
+                        <checkModificationExclude>src/main/java/eu/europa/ec/fisheries/wsdl</checkModificationExclude>
+                    </checkModificationExcludes>
+                </configuration>
+            </plugin>
+        </plugins>
         <resources>
             <resource>
                 <directory>src/main/resources</directory>
