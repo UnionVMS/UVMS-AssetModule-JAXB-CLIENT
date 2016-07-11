@@ -6,7 +6,7 @@
     
     <groupId>eu.europa.ec.fisheries.uvms.service.client</groupId>
     <artifactId>bridge-connector-client</artifactId>
-    <version>1.0.3-SNAPSHOT</version>
+    <version>1.0.3</version>
     <description>JAXWS client for FLUX incoming service</description>
 	
     <properties>
