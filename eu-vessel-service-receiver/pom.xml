@@ -3,10 +3,13 @@
     <modelVersion>4.0.0</modelVersion>
 	
     <name>FLUX Bridge Connector</name>
+    <parent>
+        <groupId>eu.europa.ec.fisheries.uvms.service.client</groupId>
+        <artifactId>client</artifactId>
+        <version>1.0.4-SNAPSHOT</version>
+    </parent>
     
-    <groupId>eu.europa.ec.fisheries.uvms.service.client</groupId>
     <artifactId>bridge-connector-client</artifactId>
-    <version>1.0.4-SNAPSHOT</version>
     <description>JAXWS client for FLUX incoming service</description>
 	
     <properties>
