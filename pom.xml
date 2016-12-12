@@ -5,7 +5,7 @@
     <name>UVMS Service clients</name>
     <groupId>eu.europa.ec.fisheries.uvms.service.client</groupId>
     <artifactId>client</artifactId>    
-    <version>1.0.1</version>
+    <version>1.0.5-SNAPSHOT</version>
     
     <description>Super POM for all UVMS web services clients</description>
     <packaging>pom</packaging>
@@ -47,7 +47,8 @@
 
     <scm>
         <connection>scm:git:https://github.com/UnionVMS/UVMS-AssetModule-JAXB-CLIENT.git</connection>
-    </scm>
+      <tag>HEAD</tag>
+  </scm>
 
 
     <build>
